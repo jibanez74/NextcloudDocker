@@ -5,7 +5,7 @@ Simple dockercompose configuration for running nextcloud
 Add a .env file at the same level as the docker-compose file, add all the necesary variables inside of it and then run:
 
 ```sh
-docker compose up -d
+docker network create nextcloudnet && docker-compose up -d
 ```
 
 You can then open your browser in http://localhost:8080 and follow the on screen instructions.
